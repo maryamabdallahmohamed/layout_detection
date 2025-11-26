@@ -4,7 +4,7 @@ from ollama import Client
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.runnables import RunnableLambda
-from src.config import Config
+from layout_detection.src.config import Config
 
 class PageInformation(BaseModel):
     """Information about the page layout."""

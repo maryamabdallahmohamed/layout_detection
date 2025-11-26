@@ -1,13 +1,13 @@
 import argparse
 import os
 from tqdm import tqdm
-from src.config import Config
-from src.loader import load_pdf, encode_image_base64
-from src.page_classifier import LayoutClassifier
-from src.detector import ContentDetector
-from src.detect_boxes import sort_single_column, sort_two_column_rtl
-from src.preprocessor import preprocess_region
-from src.visualizer import draw_boxes_on_page, save_visualized_pdf
+from layout_detection.src.config import Config
+from layout_detection.src.loader import load_pdf, encode_image_base64
+from layout_detection.src.page_classifier import LayoutClassifier
+from layout_detection.src.detector import ContentDetector
+from layout_detection.src.detect_boxes import sort_single_column, sort_two_column_rtl
+from layout_detection.src.preprocessor import preprocess_region
+from layout_detection.src.visualizer import draw_boxes_on_page, save_visualized_pdf
 
 def detect_layout(input_path):
     print(f"Loading input from: {input_path}")

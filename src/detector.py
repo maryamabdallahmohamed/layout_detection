@@ -1,7 +1,7 @@
 from surya.foundation import FoundationPredictor
 from surya.recognition import RecognitionPredictor
 from surya.detection import DetectionPredictor
-from src.config import Config
+from layout_detection.src.config import Config
 
 class ContentDetector:
     def __init__(self):
