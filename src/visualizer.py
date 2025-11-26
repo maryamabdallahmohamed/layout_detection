@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import io
 from PIL import Image
-from src.config import Config
+from layout_detection.src.config import Config
 
 def draw_boxes_on_page(image, ordered_bboxes):
     """
